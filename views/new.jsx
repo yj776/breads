@@ -17,6 +17,8 @@ function New(){
                     type = "text"
                     name = "image"
                     id = "image"
+                    pattern = "https?://. +"
+                    title = "Include http://"
                 />
                 <label htmlFor = "hasGluten">Has Gluten?</label>
                 <input 
@@ -39,12 +41,12 @@ function New(){
                 />
             </form>
 
-            <div className = "backButton">
+            {/* <div className = "backButton">
                 <a href = "/breads"><button>Go back to the index</button></a>
-            </div>
-            
+            </div> */}
         </Default>
     )
 }
 
 module.exports = New
+
