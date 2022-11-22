@@ -12,9 +12,17 @@ function Show({bread, index}){
                 <input type='submit' value="DELETE"/>
             </form>
 
-            <form action={`/breads/${index}?_method=PUT`} method="POST">
+             <div className="newButton">
+             <a href={`/breads/${index}/edit`}><button>Edit</button></a>
+             </div>
+
+    {/* <form action={`/breads/${index}?_method=PUT`} method="POST">
+    <input type = 'submit' value = "Edit"/>
+    </form> */}
+
+            {/* <form action={`/breads/${index}?_method=PUT`} method="POST">
                 <a href={`/breads/${index}/edit`}><button>Edit</button></a>
-            </form>
+            </form> */}
 
 
             <h3>{bread.name}</h3>
