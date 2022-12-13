@@ -11,7 +11,7 @@ breads.get('/', (req, res) => {
           .then(foundBreads => {
             res.render('index', {
                 breads: foundBreads,
-                baker: foundBakers,
+                bakers: foundBakers,
                 title: 'Index Page'
           })
       })
